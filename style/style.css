@@ -1,0 +1,400 @@
+/* General reset and font settings */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+    background-color: #fff;  
+}
+.wrapper {
+    width: 100%;
+    margin: 0 auto; 
+    padding-bottom: 287px;
+}
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px; 
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+   
+    width: 64px;
+    height: 64px;
+}
+.logo span {
+    color: #3E3F43;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6px;
+}
+nav a {
+    text-decoration: none;
+    padding: 48px 64px 39px;
+    color: #612999;
+    font-family: Nunito;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+nav a.active, nav a:hover {
+    color: #612999;
+    font-weight: bold;
+}
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 287px;
+    background: #EFECFF;
+    color: #333;
+    text-align: left;
+    box-sizing: border-box;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+.footer-content {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+.footer-section {
+    position: absolute;
+    top: 14px;
+    left: 32px;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+}
+.footer-section.follow-us {
+    left: 308px; /* Move inline style to CSS */
+}
+.footer-section a {
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-section h3 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+.footer-section ul li:last-child {
+    margin-bottom: 24px;
+}
+.footer-social {
+    display: flex;
+    justify-content: start;
+    gap: 24px;
+}
+.footer-social a img {
+    width: 24px;
+    height: auto;
+}
+.footer-bottom {
+    margin-top: 16px;
+    font-size: 14px;
+}
+/* Hero section styling */
+.hero {
+    background: url('../images/book-bg.jpg') no-repeat center center; 
+    background-size: cover;
+    text-align: left;
+    min-height: 797px;
+    position: relative;
+}
+.hero h1 {
+    margin: 0; 
+    padding-left: 32px;
+    padding-top: 32px; 
+    color: #612999;
+    font-family: 'Nunito', sans-serif; 
+    font-size: 96px;
+    font-weight: 800;
+}
+.hero p {
+    margin: 0; 
+    padding-left: 32px;
+    padding-top: 0; 
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    max-width: 500px;
+}
+/* About section styling */
+.about {
+    padding: 32px 32px 0px 32px;
+}
+.about h2 {
+    margin-top: 0; 
+    color: #612999;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; 
+}
+.about p{
+    color: #000;
+    text-align: justify;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.625%; 
+    
+}
+/* Books section styling */
+.books-section {
+    padding-left: 32px; 
+    padding-right: 32px; 
+}
+.books-section h2 {
+    margin-bottom: 32px; 
+    color: #612999;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+.popular-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 376px); 
+    gap: 32px; 
+    padding-bottom: 32px; 
+}
+.book-card {
+    position: relative; 
+    width: 376px; 
+    height: 496px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 38px;
+    background: #EFECFF;
+    box-shadow: 0px 6px 40px 0px rgba(57, 132, 187, 0.05);
+}
+.book-card img {
+    width: 100%; 
+    height: 276px;
+    object-fit: cover;
+    border-radius: 38px;
+}
+.book-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.book-details h3 {
+    position: absolute;
+    top: 297px; 
+    left: 32px; 
+    margin: 0;
+    color: #000;
+    font-family: 'Abel';
+    font-size: 30px;
+    font-weight: 400;
+}
+.book-details p {
+    position: absolute;
+    top: 330px; 
+    left: 32px;
+    color: #333;
+    font-family: 'Abel';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+.book-details .price {
+    position: absolute;
+    left: 32px;
+    bottom: 36px; 
+    color: #612999;
+    font-family: 'Abel';
+    font-size: 35px;
+    font-weight: 400;
+}
+.book-details .cart-icon-container {
+    position: absolute;
+    right: 57px; 
+    bottom: 27px; 
+    width: 63px; 
+    height: 63px;
+}
+.book-details .ellipse {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.book-details .cart-icon {
+    width: 31px; 
+    height: 31px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.book-details .wishlist-btn {
+    position: absolute;
+    right: 52px; 
+    top: 35px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 47px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-details .ellipse-heart {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.book-details .heart-icon {
+    width: fit-content;
+    height: fit-content;
+    z-index: 1;
+    border-radius: 1px;
+    
+}
+/* second page style */
+.content-wrapper {
+    padding-left: 32px; 
+    box-sizing: border-box; 
+    width: 100%;
+    margin: 0 auto; 
+    padding-bottom: 287px;
+}
+/* Product images section */
+.product-images {
+    /* padding-top: 42px;  */
+}
+.images-container {
+    display: flex;
+    gap: 32px;
+     
+}
+.product-image {
+    border: 4px solid #E6DBFE;
+    /* background: url(<path-to-image>) lightgray 50% / cover no-repeat; */
+}
+.product-image:first-child, .product-image:last-child {
+    width: 300px;
+    height: 300px;
+}
+.product-image:nth-child(2) {
+    width: 388.268px;
+    height: 300px;
+}
+/* Product list section */
+.product-list h2 {
+    margin-top: 32px;
+    color: #612999;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+.product-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.product-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px; 
+    color: #000;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; 
+}
+.icon-container {
+    position: relative;
+    width: 82px;
+    height: 82px;
+    margin-right: 16px;
+}
+.circle-icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.rocket-icon {
+    width: 29px;
+    height: 42.385px;
+    position: absolute;
+    top: 19px; 
+    left: 26.5px; 
+}
+/* Form section */
+.Form-Section {
+    margin-top: 32px;
+    background: #EFECFF;
+    padding: 32px;
+    margin-right: 32px;
+    margin-bottom: 198px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.form-group input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #612999;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: #4e207e;
+}
